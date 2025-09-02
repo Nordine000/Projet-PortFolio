@@ -1,9 +1,18 @@
 body {
-    margin-top: 50px;
+    display: flex;
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center;    /* Centre le contenu verticalement */
+    min-height: 100vh;      /* S'assure que le corps prend toute la hauteur de l'écran */
+    margin: 0;              /* Supprime la marge par défaut du body */
     background-color: whitesmoke;
-    text-align: center;
 }
-#loginForm {
+h1 {
+    color: rgba(255, 94, 0, 0.856);
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 5%;
+    margin-bottom: 20px;
+}
+#InscriptionForm {
     display: flex;
     flex-direction: column;
     
@@ -12,11 +21,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-h1 {
-    color: rgba(255, 94, 0, 0.856);
-    font-family: 'Raleway', sans-serif;
-}
-.login-input {
+
+.inscriptionForm, .bouton {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
