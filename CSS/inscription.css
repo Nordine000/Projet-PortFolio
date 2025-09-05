@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
 body {
     margin: 0;
     height: 100vh;
@@ -6,6 +12,9 @@ body {
     align-items: center;
     background-color: white;
     flex-direction: column;
+    position: absolute; /* postulat de départ */
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 h1 {
     color: rgba(255, 94, 0, 0.856);

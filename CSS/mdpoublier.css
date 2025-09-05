@@ -1,31 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    
+}
 .entete {
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 80px;
-    background-color: white;
+    height: 50px;
     border-bottom: 2px solid rgba(8, 8, 8, 0.856);
     display: flex;
     align-items: center;
     padding-inline-start: 10%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    z-index: 1000;
 }
-body {
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-}
-
 #Mdpoublier {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
+    position: absolute; /* postulat de départ */
+    top: 50%; left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
     width: 350px;
     padding: 20px;
-    border: 2px solid rgba(255, 94, 0, 0.856);
     background-color: white;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    align-items: center;
 }
 #Mdpoublier h3 {
     font-size: 30px;
@@ -53,6 +58,6 @@ body {
     width: 300px;
 }
 .login {
-  text-align: center;
-  font-size: 13px;
+    text-align: center;
+    font-size: 13px;
 }

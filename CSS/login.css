@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
 body {
     margin: 0;
     height: 100vh;
@@ -6,24 +12,32 @@ body {
     align-items: center;
     background-color: white;
     flex-direction: column;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Raleway', sans-serif;
 }
+
 h1 {
     color: rgba(255, 94, 0, 0.856);
     font-family: 'Raleway', sans-serif;
 }
-.login-input {
+#loginForm {
+    width: 350px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
     gap: 15px;
+    text-align: center;
     align-items: center;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+}
+.login-input {
+        padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
-    margin: 1px;
-    width: 300px;
+    border-radius: 5px;
+    width: 100%;
 }
 .bouton {
     background-color: rgba(16, 128, 194, 0.781);
